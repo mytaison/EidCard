@@ -1,7 +1,8 @@
 document.onreadystatechange = function () {
     if (document.readyState === 'complete') {
         showHide();
-        setInterval(showHide,10000)
+        setInterval(showHide,10000);
+        document.querySelector("audio").src="./jisanaudio.mp3";
     }
   }
   function showHide(){
