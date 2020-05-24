@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: cassie;
+    src: url(./Cassandra.ttf);
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100%;
+    width: 100vw;
+    background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)),
+    radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%),
+    linear-gradient(135deg, #ff0000 0%, #000036 100%),
+    radial-gradient(ellipse at 28% 0%, #ffcfac 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #cd6e8a 0%, #f5eab0 69%, #d6c8a2 70%, #a2758d 100%);
+    background-blend-mode: normal, normal, screen, overlay, normal;
+}
+.container{
+    width: 840px;
+    height: 89vh;
+    margin: 5vh auto;
+    border: 1px solid white;
+    box-shadow: aliceblue 0px 1px 1px 2px;
+}
+.blurContainer{
+    position: absolute;
+    width: inherit;
+    height: 89vh;
+    background-color: rgba(255,255,255,0.3);  
+    filter: blur(5px);
+}
+.flexContainer, .itemContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    font-family: cassie;
+    position: relative;
+}
+.item{
+    height:400px;
+    width: 400px;
+    padding: 10px;
+    text-align: center; 
+}
+.itemContainer p{
+    font-size: 1.5rem;
+}
+.innerPageLeft , .innerPageRight{
+    display: none;
+}
+.heading{
+ font-size: 3rem;      
+}
+@media screen and (min-width: 320px) and (max-width:719px){
+    body{
+        background: linear-gradient(125deg, #ECFCFF 0%, #ECFCFF 40%, #B2FCFF calc(40% + 1px), #B2FCFF 60%, #5EDFFF calc(60% + 1px), #5EDFFF 72%, #3E64FF calc(72% + 1px), #3E64FF 100%);
+    }
+    .container{
+        width: 95vw;
+    }
+    .item{
+        height:90vh;
+        width: 90vw;
+        padding: 5vh 5vw;
+    }
+}
