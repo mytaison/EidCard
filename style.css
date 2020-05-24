@@ -68,4 +68,7 @@ body{
         width: 90vw;
         padding: 5vh 5vw;
     }
+    .flexContainer, .itemContainer{
+        font-family: Arial, Helvetica, sans-serif;
+    }
 }
