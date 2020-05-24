@@ -3,6 +3,9 @@ document.onreadystatechange = function () {
         showHide();
         setInterval(showHide,10000);
         document.querySelector("audio").src="./jisanaudio.mp3";
+        if(navigator.maxTouchPoints > 0 && window.innerWidth > 719 && window.innerWidth < 1366){
+           document.querySelector("audio").style.visibility = "visible"
+        }
         document.querySelector("audio").play();
     }
   }
