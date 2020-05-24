@@ -3,6 +3,7 @@ document.onreadystatechange = function () {
         showHide();
         setInterval(showHide,10000);
         document.querySelector("audio").src="./jisanaudio.mp3";
+        document.querySelector("audio").play();
     }
   }
   function showHide(){
