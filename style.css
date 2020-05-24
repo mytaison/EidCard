@@ -67,11 +67,14 @@ audio{
         width: 95vw;
     }
     .item{
-        height:90vh;
+        height:80vh;
         width: 90vw;
         padding: 5vh 5vw;
     }
     .itemContainer p{
         font-family: Arial, Helvetica, sans-serif;
+    }
+    audio{
+        visibility: visible;
     }
 }
